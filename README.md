@@ -15,10 +15,11 @@ Have also created a Dockerfile and docker image for the application.
 
 Visit [My DockerHub Profile](https://hub.docker.com/u/darpanjain/ "DockerHub Profile darpan-jain")
 
+***
 
 **Input**
 
- - Run ``` python3 input.py ``` to give face input and then voice input of sweet choice (laddu/modak/pedha).
+ - Run ``` python python3 input.py ``` to give face input and then voice input of sweet choice (laddu/modak/pedha).
 
  - LEDs can be used to display the status to a user. (see Scripts)
 
@@ -30,7 +31,7 @@ Visit [My DockerHub Profile](https://hub.docker.com/u/darpanjain/ "DockerHub Pro
 
 **Output**
 
- - Run ``` python3 recognition.py ```
+ - Run ``` python python3 recognition.py ```
 
  - When a face is detected, the system checks if the person exists in the database.
 
@@ -38,8 +39,9 @@ Visit [My DockerHub Profile](https://hub.docker.com/u/darpanjain/ "DockerHub Pro
 
  - The robotic arm dispenses the sweet of choice once per person.
  
-
 - Run both the codes simultaneously in two terminals for real time experience. 
+
+***
 
 **Contents**
 
@@ -58,6 +60,7 @@ Visit [My DockerHub Profile](https://hub.docker.com/u/darpanjain/ "DockerHub Pro
 
 7. Dockerfile - dockerfile for the application 
 
+***
 
 **For Embedded Linux Platforms**
 
@@ -68,6 +71,8 @@ Visit [My DockerHub Profile](https://hub.docker.com/u/darpanjain/ "DockerHub Pro
 - Check the device IDs for the connected peripherals in ```/proc/asound/```
 
 - Make changes in .asoundrc accordingly.
+
+***
 
 **Docker Image**
 
@@ -84,5 +89,6 @@ You can use the provided Dockerfile to build your own image.
 > 1. Clone the repo to your system
 > 2. Build your image using ``` sudo  docker build -t application:v1 . ```
 
+***
 
 **_Any contributions to the project are welcome :)_**
