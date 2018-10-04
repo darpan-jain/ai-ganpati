@@ -13,7 +13,7 @@ Can be executed on x86 and ARM architecture systems.
 
 Have also created a Dockerfile and docker image for the application. 
 
-Visit [](https://hub.docker.com/u/darpanjain/ "DockerHub Profile darpan-jain")
+Visit [My DockerHub Profile](https://hub.docker.com/u/darpanjain/ "DockerHub Profile darpan-jain")
 
 
 **Input**
@@ -75,7 +75,7 @@ Install docker using ```sudo apt-get install docker.io``` and assign sudo permis
 
 You can find the readymade image that I've already built using ``` docker pull darpanjain/ai-input ```
 
-Visit [DockerHub Profile](https://hub.docker.com/u/darpanjain/ "DockerHub Profile darpan-jain")
+Visit [My DockerHub Profile](https://hub.docker.com/u/darpanjain/ "DockerHub Profile darpan-jain")
 
 Run the image using ``` docker run -it --rm ai-input ```
 
