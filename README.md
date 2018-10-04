@@ -7,7 +7,7 @@ Before running the codes, we need to install all the prerequisites.
 
 Have made a requirements.txt for the same. 
 
-Use ``` pip3 install -r requiremnts.txt ``` to install prerequisites.
+Use ``` pip3 install -r requirements.txt ``` to install prerequisites.
 
 Can be executed on x86 and ARM architecture systems.
 
