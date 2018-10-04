@@ -11,6 +11,10 @@ Use ``` pip3 install -r requirements.txt ``` to install prerequisites.
 
 Can be executed on x86 and ARM architecture systems.
 
+Have also created a Dockerfile and docker image for the application. 
+
+Visit (https://hub.docker.com/u/darpanjain/ "DockerHub Profile darpan-jain")
+
 
 **Input**
 
@@ -52,6 +56,9 @@ Can be executed on x86 and ARM architecture systems.
 
 6. arduino-codes - codes for some action to be performed. 
 
+7. Dockerfile - dockerfile for the application 
+
+
 **For Embedded Linux Platforms**
 
 - Connect 2 USB/CSI cameras (as per availability) and a mic for voice input
@@ -62,5 +69,20 @@ Can be executed on x86 and ARM architecture systems.
 
 - Make changes in .asoundrc accordingly.
 
+**Docker Image**
 
-*Any contributions to the project are welcome :)*
+Install docker using ```sudo apt-get install docker.io``` and assign sudo permission to it.
+
+You can find the readymade image that I've already built using ``` docker pull darpanjain/ai-input ```
+
+Visit (https://hub.docker.com/u/darpanjain/ "DockerHub Profile darpan-jain")
+
+Run the image using ``` docker run -it --rm ai-input ```
+
+You can use the provided Dockerfile to build your own image.
+
+> 1. Clone the repo to your system
+> 2. Build your image using ``` sudo  docker build -t application:v1 . ```
+
+
+**_Any contributions to the project are welcome :)_**
