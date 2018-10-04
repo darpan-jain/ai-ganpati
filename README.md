@@ -9,6 +9,9 @@ Have made a requirements.txt for the same.
 
 Use ``` pip3 install -r requiremnts.txt ``` to install prerequisites.
 
+Can be executed on x86 and ARM architecture systems.
+
+
 **Input**
 
  - Run ``` python3 input.py ``` to give face input and then voice input of sweet choice (laddu/modak/pedha).
@@ -41,7 +44,7 @@ Use ``` pip3 install -r requiremnts.txt ``` to install prerequisites.
 2. models - conatins trained models required for face inference.
 	- Note: The voice model has been pre-trained using several different voice samples.
 
-3. uitls - contains the all dependencies that the main codes require.
+3. utils - contains the all dependencies that the main codes require.
 
 4. words - contains the voice input given by user which will be used to get the label.
 
@@ -49,11 +52,14 @@ Use ``` pip3 install -r requiremnts.txt ``` to install prerequisites.
 
 6. arduino-codes - codes for some action to be performed. 
 
-
-** To run this application on any Embedded Linux platform **
+**For Embedded Linux Platforms**
 
 - Connect 2 USB/CSI cameras (as per availability) and a mic for voice input
+
+- Install drivers if required using ```insmod [driver location]```
+
 - Check the device IDs for the connected peripherals in ```/proc/asound/```
+
 - Make changes in .asoundrc accordingly.
 
 
