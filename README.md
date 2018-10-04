@@ -48,7 +48,7 @@ Visit [My DockerHub Profile](https://hub.docker.com/u/darpanjain/ "DockerHub Pro
 1. requirements.txt - contains all the prerequisites required for the functioning of the application.
 
 2. models - conatins trained models required for face inference.
-	> - Note: The voice model has been pre-trained using several different voice samples.
+	>  **Note: The voice model has been pre-trained using several voice samples.**
 
 3. utils - contains the all dependencies that the main codes require.
 
