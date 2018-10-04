@@ -19,7 +19,7 @@ Visit [My DockerHub Profile](https://hub.docker.com/u/darpanjain/ "DockerHub Pro
 
 **Input**
 
- - Run ``` python python3 input.py ``` to give face input and then voice input of sweet choice (laddu/modak/pedha).
+ - Run ``` python3 input.py ``` to give face input and then voice input of sweet choice (laddu/modak/pedha).
 
  - LEDs can be used to display the status to a user. (see Scripts)
 
@@ -31,7 +31,7 @@ Visit [My DockerHub Profile](https://hub.docker.com/u/darpanjain/ "DockerHub Pro
 
 **Output**
 
- - Run ``` python python3 recognition.py ```
+ - Run ``` python3 recognition.py ```
 
  - When a face is detected, the system checks if the person exists in the database.
 
