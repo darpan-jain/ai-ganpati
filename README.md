@@ -48,34 +48,30 @@
 
 ### Block Diagram
 
-![Block Diagram](https://github.com/darpan-jain/ai-gan-master/blob/master/overview.png)
+<p align="center">
+  <img src="https://github.com/darpan-jain/ai-gan-master/blob/master/overview.png" width="640px" height="480px"/></p>
 ***
 
 ### Input
 
  - Run `python3 input.py` for face input and then voice input for choice of sweet (laddu/modak/pedha).
-
  - LEDs can be used to display the status to a user. (see ./Scripts)
-
- - The code uses the MTCNN model for Face detection.
-
- - Face alignment is done using dlib.
-
- - FaceNet is used for converting the various features of a person's face into 128D embeddings.
+ - The faces in the frame are first detect, aligned and croppped.
+ - Then the features of the face are extracted and converted to 128D embeddings.
+ - The user says the speech of their choice, which is saved to a `.wav` format and given to the speech model.
+ - The label from the audio file is saved along with the embeddings of the person in the database.
  
  ***
 
 ### Output
 
- - Run `python3 recognition.py `
-
- - When a face is detected, the system verifies if the person exists in the database.
-
- - On recognition, the corresponding label is displayed.
-
- - The robotic arm dispenses the sweet as per the registered person's choice.
- 
+- Run `python3 recognition.py `
+- When a face is detected, the features of the face are extracted.
+- The system verifies if the person exists in the database.
+- On recognition, the corresponding label is displayed (person name/unknown)
+- The robotic arm dispenses the sweet as per the registered person's choice.
 - Both the codes (input.py and recognition.py) can be executed simultaneously. 
+
 ***
 
 ### Dependencies
@@ -106,5 +102,3 @@ All the required dependencies can be install by running the command `pip install
 > 1. Clone the repo to your system
 > 2. Build your image using ``` sudo  docker build -t application:v1 . ```
 ***
-
-**_Any contributions to the project are welcome :)_**
