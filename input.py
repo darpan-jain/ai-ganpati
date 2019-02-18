@@ -1,5 +1,5 @@
 '''
-Code that captures embeddings of the face and saves them as vector values
+Code that captures embeddings of the face and saves them as 128D embedddings
 Run using 'python3 input.py' in the terminal
 
 '''
@@ -24,8 +24,7 @@ def main():
 def create_manual_data():
 	count=1
 	recval=0
-	vs = cv2.VideoCapture(0); #Input taken using webcam (primary camera)
-	#subprocess.call(['/home/Desktop/FaceRec/red.sh'])
+	vs = cv2.VideoCapture(0); #Input taken using webcam
 
 	while True :
 		f = open('./face_database.txt','r');
