@@ -69,7 +69,7 @@
 - When a face is detected, the features of the face are extracted.
 - The system verifies if the person exists in the database.
 - On recognition, the corresponding label is displayed (person name/unknown)
-- The robotic arm dispenses the sweet as per the registered person's choice.
+- Dispenses the sweet as per the registered person's choice.
 - Both the codes (input.py and recognition.py) can be executed simultaneously. 
 
 ***
