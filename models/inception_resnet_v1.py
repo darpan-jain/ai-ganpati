@@ -17,8 +17,9 @@
 As described in http://arxiv.org/abs/1602.07261.
   Inception-v4, Inception-ResNet and the Impact of Residual Connections
     on Learning
-  Christian Szegedy, Sergey Ioffe, Vincent Vanhoucke, Alex Alemi
+    Christian Szegedy, Sergey Ioffe, Vincent Vanhoucke, Alex Alemi
 """
+
 from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
