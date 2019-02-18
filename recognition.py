@@ -1,8 +1,6 @@
 '''
-Code for recognition of the face and to deliver the sweet selected by the user.
-
+Code for recognition of people and to deliver the sweet selected by the user.
 Run using 'python3 recognition.py' 
-
 '''
 
 import cv2
@@ -79,14 +77,15 @@ def camera_recog():
                         count=0
                         time.sleep(0.3)			
  
-        cv2.imshow("Frame",frame)
-        #print(recog_data[0][0])
+        cv2.imshow("Hey there",frame)
         key = cv2.waitKey(1) & 0xFF
         if key == ord("q"):
             break
 
-def findPeople(features_arr, positions, thres = 0.70, percent_thres = 70): #Function to check the saved faces in the database
-    #Recognition threshold is set to 70% and can be altered according to requirement
+def findPeople(features_arr, positions, thres = 0.70, percent_thres = 70): 
+    ''' Function to check the saved faces in the database.
+        Recognition threshold is set to 70% and can be altered according to requirement '''
+    
     f = open('./face_database','r')
     data_set = json.loads(f.read());
     returnRes = [];
@@ -109,8 +108,8 @@ def findPeople(features_arr, positions, thres = 0.70, percent_thres = 70): #Func
 
 
 if __name__ == '__main__':
-    FRGraph = FaceRecGraph();
-    aligner = AlignCustom();
+    FRGraph = FaceRecGraph()
+    aligner = AlignCustom()
     extract_feature = FaceFeature(FRGraph)
-    face_detect = MTCNNDetect(FRGraph, scale_factor=2); #scale_factor, rescales image for faster detection
-    main();
+    face_detect = MTCNNDetect(FRGraph, scale_factor=2); # rescales image for faster detection
+    main()
