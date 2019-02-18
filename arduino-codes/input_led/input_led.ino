@@ -17,9 +17,9 @@ void loop()
 {
 
     pin1 = analogRead(A0); // GPIO = 337 aka 25
-    delay(500);
+    delay(300);
     pin2 = analogRead(A1); // GPIO = 501 aka 31
-    delay(500);
+    delay(300);
 
 
   Serial.println("A0 value");
