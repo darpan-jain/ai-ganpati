@@ -21,27 +21,27 @@ View [Block Diagram](https://github.com/darpan-jain/ai-gan-master/blob/master/ov
 
 **Input**
 
- - Run ``` python3 input.py ``` to give face input and then voice input of sweet choice (laddu/modak/pedha).
+ - Run ``` python3 input.py ``` for face input and then voice input for choice of sweet (laddu/modak/pedha).
 
- - LEDs can be used to display the status to a user. (see Scripts)
+ - LEDs can be used to display the status to a user. (see ./Scripts)
 
  - The code uses the MTCNN model for Face detection.
 
  - Face alignment is done using dlib.
 
- - FaceNet is used for converting the various features of a person's face into vectors (embeddings).
+ - FaceNet is used for converting the various features of a person's face into 128D embeddings.
 
 **Output**
 
  - Run ``` python3 recognition.py ```
 
- - When a face is detected, the system checks if the person exists in the database.
+ - When a face is detected, the system verifies if the person exists in the database.
 
  - On recognition, the corresponding label is displayed.
 
- - The robotic arm dispenses the sweet of choice once per person.
+ - The robotic arm dispenses the sweet as per the registered person's choice.
  
-- Run both the codes simultaneously in two terminals for real time experience. 
+- Both the codes (input.py and recognition.py) can be executed simultaneously. 
 
 ***
 
