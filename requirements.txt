@@ -1,4 +1,4 @@
-opencv_contrib_python==3.4.1.15
+opencv_contrib_python==4.2.0.32
 six==1.11.0
 pydub==0.22.1
 tensorflow==1.15.4
